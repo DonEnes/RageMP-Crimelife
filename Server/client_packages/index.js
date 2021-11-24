@@ -17,7 +17,7 @@ require('weaponcomponents');
 
 
 
-mp.discord.update('VACE Gangwars','discord.gg/vTDSAFXw4s');
+mp.discord.update('Vace Gangwars','discord.gg/vTDSAFXw4s');
 
 mp.events.add('renderseat', () =>
 {
