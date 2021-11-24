@@ -143,3 +143,12 @@ C:\Users\Administrator\Desktop\ir\Server\bridge\resources\gangwar\netcoreapp2.0\
 C:\Users\Administrator\Desktop\ir\Server\bridge\resources\gangwar\netcoreapp2.0\RageMP-Gangwar.runtimeconfig.dev.json
 C:\Users\Administrator\Desktop\ir\Server\bridge\resources\gangwar\netcoreapp2.0\RageMP-Gangwar.dll
 C:\Users\Administrator\Desktop\ir\Server\bridge\resources\gangwar\netcoreapp2.0\RageMP-Gangwar.pdb
+C:\Users\Administrator\Documents\GitHub\vacegw\Mappe\RageMP-Gangwar\RageMP-Gangwar\obj\Debug\netcoreapp2.0\RageMP-Gangwar.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\vacegw\Mappe\RageMP-Gangwar\RageMP-Gangwar\obj\Debug\netcoreapp2.0\RageMP-Gangwar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\GitHub\vacegw\Mappe\RageMP-Gangwar\RageMP-Gangwar\obj\Debug\netcoreapp2.0\RageMP-Gangwar.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\vacegw\Mappe\RageMP-Gangwar\RageMP-Gangwar\obj\Debug\netcoreapp2.0\RageMP-Gangwar.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\vacegw\Mappe\RageMP-Gangwar\RageMP-Gangwar\obj\Debug\netcoreapp2.0\RageMP-Gangwar.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\vacegw\Mappe\RageMP-Gangwar\RageMP-Gangwar\obj\Debug\netcoreapp2.0\RageMP-Gangwar.csproj.CopyComplete
+C:\Users\Administrator\Documents\GitHub\vacegw\Mappe\RageMP-Gangwar\RageMP-Gangwar\obj\Debug\netcoreapp2.0\RageMP-Gangwar.dll
+C:\Users\Administrator\Documents\GitHub\vacegw\Mappe\RageMP-Gangwar\RageMP-Gangwar\obj\Debug\netcoreapp2.0\RageMP-Gangwar.pdb
+C:\Users\Administrator\Documents\GitHub\vacegw\Mappe\RageMP-Gangwar\RageMP-Gangwar\obj\Debug\netcoreapp2.0\RageMP-Gangwar.genruntimeconfig.cache

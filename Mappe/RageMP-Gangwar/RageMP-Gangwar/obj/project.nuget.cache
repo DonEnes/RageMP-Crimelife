@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jmtxOTOxeLH9lnfhE78RiNPLllbLyTsoYfqJ71AVIFLky/dspmsNvMl2Mewa66lYyo063PeQ7kvd3N+csoDNcQ==",
+  "dgSpecHash": "qgJiYjUCMCKauOLkDprtOrcgqLE0DCGRXJIrmhzPWA9vlivAhJAGL/3cqI5dSYRgcc+yJFFLJNCRpqjTq2SvuA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\ir\\Mappe\\RageMP-Gangwar\\RageMP-Gangwar\\RageMP-Gangwar.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Documents\\GitHub\\vacegw\\Mappe\\RageMP-Gangwar\\RageMP-Gangwar\\RageMP-Gangwar.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\bcrypt.net-next\\3.2.0\\bcrypt.net-next.3.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -26,9 +26,9 @@ namespace RageMP_Gangwar.Handler
                 if(player.isChatMuted()) { player.SendChatMessage("Du bist gemutet."); return; }
 
                 if (adminLevel == 0)
-                    NAPI.Chat.SendChatMessageToAll($"[~r~Gambo~w~] {prestigeRank} [lvl. {pLevel}] {player.Name}: {msg}");
+                    NAPI.Chat.SendChatMessageToAll($"[~r~Vace System~w~] {prestigeRank} [lvl. {pLevel}] {player.Name}: {msg}");
                 else if (adminLevel > 0)
-                    NAPI.Chat.SendChatMessageToAll($"[~r~Gambo~w~] {prefix} {prestigeRank} [lvl. {pLevel}] {player.Name}: {color} {msg}");
+                    NAPI.Chat.SendChatMessageToAll($"[~r~Vace System~w~] {prefix} {prestigeRank} [lvl. {pLevel}] {player.Name}: {color} {msg}");
             }
             catch (Exception e)
             {

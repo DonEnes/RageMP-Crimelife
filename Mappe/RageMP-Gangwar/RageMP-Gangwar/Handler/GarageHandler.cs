@@ -47,7 +47,7 @@ namespace RageMP_Gangwar.Handler
 							hash = Models.ServerFactions.GetFactionVehicleHashByName(displayName);
 							if(hash == 0 || Models.ServerFactions.GetFactionVehicleLevel(hash) == 0 || Models.ServerFactions.GetFactionVehicleLevel(hash) > Models.ServerAccounts.GetPlayerLevel(pID))
 							{
-								NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Für dieses Fahrzeug reicht dein Level nicht aus.");
+								NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Für dieses Fahrzeug reicht dein Level nicht aus.");
 								return;
 							}
 							break;
@@ -64,7 +64,7 @@ namespace RageMP_Gangwar.Handler
 							hash = ServerVehicles.GetPrestigeVehicleHashByName(displayName);
 							if(hash == 0 || Models.ServerVehicles.GetPrestigeVehicleLevel(hash) == 0 || Models.ServerVehicles.GetPrestigeVehicleLevel(hash) > Models.ServerAccounts.GetPrestigeLevel(pID))
 							{
-								NAPI.Chat.SendChatMessageToPlayer(player, $"[~pc~Gambo~w~] Für dieses Fahrzeug reicht dein Prestige-Level nicht aus.");
+								NAPI.Chat.SendChatMessageToPlayer(player, $"[~pc~Vace System~w~] Für dieses Fahrzeug reicht dein Prestige-Level nicht aus.");
 								return;
 							}
 							break;

@@ -72,7 +72,7 @@ namespace RageMP_Gangwar.Handler
                 int pID = player.getAccountId();
                 if (pID <= 0) return;
                 ServerAccounts.ResetKilLDeaths(pID);
-                player.SendChatMessage($"[~r~Gambo~w~] K/D zurückgesetzt.");
+                player.SendChatMessage($"[~r~Vace System~w~] K/D zurückgesetzt.");
             }
             catch (Exception e)
             {
@@ -256,13 +256,13 @@ namespace RageMP_Gangwar.Handler
                 int pFaction = ServerAccounts.GetAccountFaction(pID);
                 if (pFaction <= 0 || ServerAccounts.GetFactionRank(pID) != 2)
                 {
-                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Du bist in keiner privaten Fraktion oder bist nicht der Leader.");
+                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Du bist in keiner privaten Fraktion oder bist nicht der Leader.");
                     return;
                 }
 
                 if(ServerAccounts.GetAccountFaction(tID) != 0)
                 {
-                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Der Spieler {inviteTarget.Name} ist bereits in einer privaten Fraktion.");
+                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Der Spieler {inviteTarget.Name} ist bereits in einer privaten Fraktion.");
                     return;
                 }
 
@@ -293,7 +293,7 @@ namespace RageMP_Gangwar.Handler
                 if (pID <= 0 || iID <= 0) return;
                 if(ServerAccounts.GetAccountFaction(pID) != 0)
                 {
-                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Du bist bereits in einer privaten Fraktion.");
+                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Du bist bereits in einer privaten Fraktion.");
                     return;
                 }
 
@@ -324,13 +324,13 @@ namespace RageMP_Gangwar.Handler
                 int pFaction = ServerAccounts.GetAccountFaction(pID);
                 if (pFaction <= 0 || ServerAccounts.GetFactionRank(pID) != 2)
                 {
-                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Du bist in keiner privaten Fraktion oder bist nicht der Leader.");
+                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Du bist in keiner privaten Fraktion oder bist nicht der Leader.");
                     return;
                 }
 
                 if (ServerAccounts.GetAccountFaction(tID) != pFaction)
                 {
-                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Der Spieler {target.Name} ist nicht in deiner Fraktion.");
+                    NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Der Spieler {target.Name} ist nicht in deiner Fraktion.");
                     return;
                 }
                 string factionName = ServerFactions.GetFactionName(pFaction);

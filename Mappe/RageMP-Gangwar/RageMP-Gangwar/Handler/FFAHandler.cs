@@ -33,13 +33,13 @@ namespace RageMP_Gangwar.Handler
 				if (arenaData == null || pID <= 0) return;
 				if(arenaData.currentPlayers >= 15)
 				{
-					player.SendChatMessage($"[~p~Gambo~w~] Die FFA Arena ist ~p~voll.~w~ Wähle eine andere.");
+					player.SendChatMessage($"[~p~Vace System~w~] Die FFA Arena ist ~p~voll.~w~ Wähle eine andere.");
 					return;
 				}
 				ServerAccounts.SetPlayerFFAArena(pID, arenaData.id);
 				ServerFFA.IncreaseFFAPlayer(arenaData.id);
 				TeamHandler.SpawnPlayer(player);
-				player.SendChatMessage($"[~p~Gambo~w~] Willkommen in der FFA Arena. Benutze ~p~/quitffa~w~ um die FFA-Arena zu verlassen.");
+				player.SendChatMessage($"[~p~Vace System~w~] Willkommen in der FFA Arena. Benutze ~p~/quitffa~w~ um die FFA-Arena zu verlassen.");
 			}
 			catch (Exception e)
 			{
@@ -58,13 +58,13 @@ namespace RageMP_Gangwar.Handler
 				if (arenaData == null || pID <= 0) return;
 				if(arenaData.currentPlayers >= 15)
 				{
-					player.SendChatMessage($"[~p~Gambo~w~] Die FFA Arena ist ~p~voll.~w~ Wähle eine andere.");
+					player.SendChatMessage($"[~p~Vace System~w~] Die FFA Arena ist ~p~voll.~w~ Wähle eine andere.");
 					return;
 				}
 				ServerAccounts.SetPlayerFFAArena(pID, arenaData.id);
 				ServerFFA.IncreaseFFAPlayer(arenaData.id);
 				TeamHandler.SpawnPlayer(player);
-				player.SendChatMessage($"[~p~Gambo~w~] Willkommen in der FFA Arena. Benutze ~p~/quitffa~w~ um die FFA-Arena zu verlassen.");
+				player.SendChatMessage($"[~p~Vace System~w~] Willkommen in der FFA Arena. Benutze ~p~/quitffa~w~ um die FFA-Arena zu verlassen.");
 			}
 			catch (Exception e)
 			{

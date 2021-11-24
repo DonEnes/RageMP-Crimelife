@@ -23,8 +23,8 @@ namespace RageMP_Gangwar.Handler
                     NAPI.Chat.SendChatMessageToPlayer(player, $"[~p~1vs1~w~] {target.Name} hat eingehende Anfragen blockiert!");
                     return;
                 }
-                if(Models.ServerAccounts.GetPlayerFFAArena(pID) != 0 || Models.ServerAccounts.GetPlayerFFAArena(tID) != 0) { NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Du oder die ausgewählte Person sind in einer FFA Arena."); return; }
-                if(player.getcurrentDuellPartner() != 0 || target.getcurrentDuellPartner() != 0) { NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Du oder die ausgewählte Person sind bereits in einem anderen Duell."); return; }
+                if(Models.ServerAccounts.GetPlayerFFAArena(pID) != 0 || Models.ServerAccounts.GetPlayerFFAArena(tID) != 0) { NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Du oder die ausgewählte Person sind in einer FFA Arena."); return; }
+                if(player.getcurrentDuellPartner() != 0 || target.getcurrentDuellPartner() != 0) { NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Du oder die ausgewählte Person sind bereits in einem anderen Duell."); return; }
                 player.SetData("duellRequestName", target.Name);
                 target.SetData("duellRequestName", player.Name);
                 NAPI.Chat.SendChatMessageToPlayer(player, $"[~p~1vs1~w~] Du hast {target.Name} herausgefordert!");
@@ -68,8 +68,8 @@ namespace RageMP_Gangwar.Handler
                 int pID = player.getAccountId();
                 int tID = target.getAccountId();
                 if (pID <= 0 || tID <= 0 || Models.ServerAccounts.GetAccountSelectedTeam(pID) <= 0 || Models.ServerAccounts.GetAccountSelectedTeam(tID) <= 0) return;
-                if (Models.ServerAccounts.GetPlayerFFAArena(pID) != 0 || Models.ServerAccounts.GetPlayerFFAArena(tID) != 0) { NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Du oder die ausgewählte Person sind in einer FFA Arena."); return; }
-                if (player.getcurrentDuellPartner() != 0 || target.getcurrentDuellPartner() != 0) { NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Du oder die ausgewählte Person sind bereits in einem anderen Duell."); return; }
+                if (Models.ServerAccounts.GetPlayerFFAArena(pID) != 0 || Models.ServerAccounts.GetPlayerFFAArena(tID) != 0) { NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Du oder die ausgewählte Person sind in einer FFA Arena."); return; }
+                if (player.getcurrentDuellPartner() != 0 || target.getcurrentDuellPartner() != 0) { NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Du oder die ausgewählte Person sind bereits in einem anderen Duell."); return; }
                 if (!player.HasData("duellRequestName") || !target.HasData("duellRequestName")) return;
                 if (player.GetData("duellRequestName") != target.Name || target.GetData("duellRequestName") != player.Name) return;
                 Models.ServerAccounts.SetPlayerDuellPartner(pID, tID);

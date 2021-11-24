@@ -11,7 +11,7 @@ namespace RageMP_Gangwar.Utilities
             public static readonly string Host = "localhost";
             public static readonly string User = "root";
             public static readonly string Password = "";
-            public static readonly string Database = "gangwar";
+            public static readonly string Database = "vacegw";
             public static readonly string Port = "3306";
             //public static readonly string Host = "45.82.121.159";
             //public static readonly string User = "admin";

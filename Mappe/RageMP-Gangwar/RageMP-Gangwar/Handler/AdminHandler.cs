@@ -409,7 +409,7 @@ namespace RageMP_Gangwar.Handler
                 int pID = player.getAccountId();
                 if (pID <= 0 || Models.ServerAccounts.GetAccountSelectedTeam(pID) <= 0 || player.getAdminLevel() < 4) return;
                 if (target.hasAccountId() && target.getAdminLevel() > player.getAdminLevel()) return;
-                NAPI.Chat.SendChatMessageToAll($"[~r~Gambo~w~] {player.Name} hat {target.Name} vom Server gekickt. Grund: {reason}");
+                NAPI.Chat.SendChatMessageToAll($"[~r~Vace System~w~] {player.Name} hat {target.Name} vom Server gekickt. Grund: {reason}");
                 target.Kick($"{reason}");
                 Models.AdminLogs.AddNewAdminLog(pID, target.getAccountId(), "kick", $"{player.Name} hat {target.Name} gekickt. Grund: {reason}");
             }
@@ -426,7 +426,7 @@ namespace RageMP_Gangwar.Handler
             int pID = player.getAccountId();
             int tID = target.getAccountId();
             if (pID <= 0 || tID <= 0 || Models.ServerAccounts.GetAccountSelectedTeam(pID) <= 0 || player.getAdminLevel() < 9 || target.getAdminLevel() > player.getAdminLevel() || Models.ServerAccounts.IsAccountPermBanned(tID)) return;
-            NAPI.Chat.SendChatMessageToAll($"[~r~Gambo~w~] {player.Name} hat {target.Name} gebannt. Grund: {reason}");
+            NAPI.Chat.SendChatMessageToAll($"[~r~Vace System~w~] {player.Name} hat {target.Name} gebannt. Grund: {reason}");
             Models.ServerAccounts.SetPlayerBanned(tID, true, false);
             target.Kick($"{reason}");
             Models.AdminLogs.AddNewAdminLog(pID, tID, "ban", $"{player.Name} hat {target.Name} gebannt. Grund: {reason}");
@@ -448,7 +448,7 @@ namespace RageMP_Gangwar.Handler
             int pID = player.getAccountId();
             int tID = target.getAccountId();
             if (pID <= 0 || tID <= 0 || Models.ServerAccounts.GetAccountSelectedTeam(pID) <= 0 || player.getAdminLevel() < 5 || target.getAdminLevel() > player.getAdminLevel() || Models.ServerAccounts.IsAccountTimeBanned(tID)) return;
-            NAPI.Chat.SendChatMessageToAll($"[~r~Gambo~w~] {player.Name} hat {target.Name} temporär gebannt. Grund: {reason}");
+            NAPI.Chat.SendChatMessageToAll($"[~r~Vace System~w~] {player.Name} hat {target.Name} temporär gebannt. Grund: {reason}");
             Models.ServerAccounts.SetPlayerBanned(tID, false, true);
             Models.ServerAccounts.SetTimebanHours(tID, hours);
             target.Kick($"{reason} ({hours} Stunden)");
@@ -464,7 +464,7 @@ namespace RageMP_Gangwar.Handler
                 int pID = player.getAccountId();
                 if (pID <= 0 || Models.ServerAccounts.GetAccountSelectedTeam(pID) <= 0 || player.getAdminLevel() < 8) return;
                 Constants.ServerConfig.XPMultiplikator = multiplikator;
-                NAPI.Chat.SendChatMessageToAll($"[~r~Gambo~w~] Der XP-Multiplikator wurde von {player.Name} auf {multiplikator}x gesetzt.");
+                NAPI.Chat.SendChatMessageToAll($"[~r~Vace System~w~] Der XP-Multiplikator wurde von {player.Name} auf {multiplikator}x gesetzt.");
             }
             catch (Exception e)
             {
@@ -481,7 +481,7 @@ namespace RageMP_Gangwar.Handler
                 int pID = player.getAccountId();
                 if (pID <= 0 || Models.ServerAccounts.GetAccountSelectedTeam(pID) <= 0 || player.getAdminLevel() < 6) return;
                 Models.ServerAccounts.SetPlayerBanned(accId, false, false);
-                NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Gambo~w~] Spieler wurde erfolgreich entbannt (ID: {accId}).");
+                NAPI.Chat.SendChatMessageToPlayer(player, $"[~r~Vace System~w~] Spieler wurde erfolgreich entbannt (ID: {accId}).");
                 Models.AdminLogs.AddNewAdminLog(pID, accId, "unban", $"{player.Name} hat die Spieler-ID ({accId}) entbannt.");
             }
             catch (Exception e)
