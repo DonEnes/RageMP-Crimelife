@@ -1,0 +1,206 @@
+<html>
+
+<head>
+
+    <style>
+        @font-face {
+            font-family: HelveticaNeue;
+            src: url(fonts/HelveticaNeue.ttf);
+        }
+        
+        .inventory {
+            background: #fff;
+            display: block;
+            margin: auto;
+            border-top: 15px solid rgba(14, 14, 14, 0.644);
+            border-left: 15px solid rgba(14, 14, 14, 0.644);
+            border-bottom: 15px solid rgba(14, 14, 14, 0.644);
+            border-right: 15px solid rgba(14, 14, 14, 0.644);
+            position: absolute;
+            right: 30em;
+            top: 50%;
+            transform: translate(0, -50%);
+            border-radius: 5.5rem;
+            max-width: 415px;
+            width: 100%;
+            padding-bottom: 7rem;
+            font-family: HelveticaNeue;
+        }
+        
+        h2 {
+            padding: 0 0 0 0.6rem;
+            margin-bottom: 0;
+            /* text-transform: uppercase; */
+            letter-spacing: .1rem;
+            color: #505050;
+        }
+        
+        hr {
+            border: 2px solid #E57373 !important;
+            margin-right: 60%;
+            margin-left: 0.6rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .row {
+            padding: 0 3rem 1rem 10rem;
+        }
+        
+        .item {
+            border: 3px dashed #949494;
+            height: 5rem;
+            width: 100%;
+        }
+        
+        .active {
+            background: rgba(0, 0, 0, 0.39);
+        }
+        
+        h4 {
+            display: block;
+            margin: 0 1px 5px 2.5em;
+            text-align: left;
+            /* letter-spacing: .1rem; */
+            color: #455A64;
+        }
+        
+        .btn {
+            display: block;
+            height: 2rem;
+            width: 15em;
+            margin-left: 2.75em;
+            background: #1fb126;
+            margin-bottom: 15px;
+            border: 0;
+            border-radius: .25rem;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        
+        .btn:disabled {
+            background-color: #455A64;
+            cursor: default;
+        }
+        
+        .btn:hover:enabled {
+            transition: opacity ease .2s;
+            opacity: 0.7;
+            box-shadow: 0px 0px 1px black;
+        }
+        
+        .subline {
+            display: block;
+            margin: 0 4rem .5rem;
+        }
+        
+        .subline.inactive {
+            border: 0 !important;
+            margin-top: 10px;
+        }
+        
+        .subline.active {
+            margin-top: 0;
+            border: 1px solid #E57373 !important;
+        }
+        
+        .close {
+            bottom: 0;
+            position: absolute;
+            margin: 0px 1.6em 19px;
+            /* display: none; */
+            color: gray;
+            right: 0;
+            font-weight: 100;
+            opacity: 0.7;
+        }
+        
+        .close:hover {
+            opacity: 1;
+            transition: opacity ease .5s;
+        }
+        
+        .close:hover:after,
+        .close:hover:before {
+            background-color: #E57373;
+            transition: background-color ease .5s;
+        }
+        
+        .close:before,
+        .close:after {
+            height: 1.5rem;
+            width: 2px;
+            background-color: #333;
+        }
+        
+        .close:before {
+            transform: rotate(45deg);
+        }
+        
+        .close:after {
+            /* transform: rotate(-45deg); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inventory">
+        <center>
+            <h2>FFA - <span id="arenaname">{Arena}</span></h2>
+        </center>
+        <div class="row" style="margin-top: 1em;">
+            <div id="item-0" onclick="select(0);" style="padding: 5px 11.05em; position: absolute; color: #505050; font-weight: 700; margin-left: -10em;" class="active">
+                <p>Schließen</p>
+            </div>
+            <div id="item-1" onclick="select(1);" style="padding: 5px 10.35em; position: absolute; color: #505050; font-weight: 700; white-space: nowrap; margin-left: -10em; margin-top: 4em;">
+                <p>FFA beitreten</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var selectedId = 0;
+        var arena = "";
+
+        function select(id) {
+            selectedId = id;
+            update();
+        }
+
+        function updateArena(arenaname) {
+            arena = arenaname;
+            document.getElementById('arenaname').innerHTML = arena;
+        }
+
+        document.body.onkeydown = function(e) {
+            if (e.keyCode == 38 || e.keyCode == 40) {
+                if (selectedId == 0) {
+                    select(1);
+                } else {
+                    select(0);
+                }
+            }
+            if (e.keyCode == 13) {
+                if (selectedId == 0) {
+                    close();
+                } else {
+                    mp.trigger("Client:FFA:setFFA", arena);
+                }
+            }
+        };
+
+        function update() {
+            document.getElementById('item-0').classList.remove("active");
+            document.getElementById('item-1').classList.remove("active");
+
+            document.getElementById('item-' + selectedId).classList.add("active");
+        }
+
+        function close() {
+            mp.trigger("Client:FFA:destroyBrowser");
+        }
+    </script>
+</body>
+
+</html>

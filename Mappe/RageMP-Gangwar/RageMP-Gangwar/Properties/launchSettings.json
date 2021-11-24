@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "RageMP-Gangwar": {
+      "commandName": "Executable",
+      "executablePath": "D:\\GitLab space\\ragemp-gangwars\\Server\\server.exe",
+      "workingDirectory": "D:\\GitLab space\\ragemp-gangwars\\Server"
+    }
+  }
+}

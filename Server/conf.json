@@ -1,0 +1,13 @@
+{
+  "maxplayers": 250,
+  "name": "Gambo Gangwar | 3x XP-Boost |",
+  "\",": null,
+  "language": "ge",
+  "gamemode": "Gangwar",
+  "stream-distance": 500.0,
+  "announce": true,
+  "csharp": "enabled",
+  "bind": "0.0.0.0",
+  "port": 22005,
+  "allow-cef-debugging": true
+}
