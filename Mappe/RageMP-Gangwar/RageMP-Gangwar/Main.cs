@@ -15,7 +15,7 @@ namespace RageMP_Gangwar
             Console.WriteLine("Server startet.");
             NAPI.Server.SetGlobalServerChat(false);
             NAPI.Server.SetAutoSpawnOnConnect(false);
-            NAPI.Server.SetCommandErrorMessage("[Vace Gangwar] Dieser Befehl wurde nicht gefunden.");
+            NAPI.Server.SetCommandErrorMessage("[Vace] Dieser Befehl wurde nicht gefunden.");
             NAPI.Server.SetAutoRespawnAfterDeath(false);
 
             Database.DatabaseHandler.LoadAllAccounts();
