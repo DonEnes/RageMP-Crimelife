@@ -23,9 +23,9 @@ body{
         width:100px;height:100px;fill:#eeeeee;display:inline-block;-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;color:#eeeeee;text-transform:uppercase;margin:25px 0 0 0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.login-module .login-window .login-right .login-rules{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:0 0 10px 0}.login-module .login-window .login-right .login-rules p{position:absolute;font-size:20px;display:block;color:#ff0000;margin:-50;padding:0}.login-module .login-window .login-right .login-rules p.rule-show{-webkit-animation:fadein 5000ms ease-in-out;animation:fadein 5000ms ease-in-out}@keyframes fadein{0%{opacity:0}10%{opacity:1}90%{opacity:1}to{opacity:0}}@-webkit-keyframes fadein{0%{opacity:0}10%{opacity:1}90%{opacity:1}to{opacity:0}}.login-module .login-window .login-right .login-register-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 5%}.login-module .login-window .login-right .login-register-wrapper .login-input-container{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative;color:#af19ff;font-size:17px;border-top:3px solid #000000;border-right:3px solid #000000;border-left:3px solid #000000;border-bottom:3px solid #000000;margin:10px 0}.login-module .login-window .login-right .login-register-wrapper .login-input-container ::-webkit-input-placeholder{color:#ff0000;opacity:1;font-size:17px}.login-module .login-window .login-right .login-register-wrapper .login-input-container :-ms-input-placeholder{color:#dd1b1b;opacity:1;font-size:17px}.login-module .login-window .login-right .login-register-wrapper .login-input-container ::-ms-input-placeholder{color:#cccccc;opacity:1;font-size:17px}.login-module .login-window .login-right .login-register-wrapper .login-input-container ::placeholder{color:#cccccc;opacity:1;font-size:17px}.login-module .login-window .login-right .login-register-wrapper .login-input-container label{display:none}.login-module .login-window .login-right .login-register-wrapper .username:after{content:"\f007";position:absolute;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;left:0;height:100%;font-family:"Font Awesome 5 Free";font-weight:400;color:#cccccc}.login-module .login-window .login-right .login-register-wrapper .password:after{content:"\f577";position:absolute;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;left:0;height:100%;font-family:"Font Awesome 5 Free";font-weight:600;color:#cccccc}.login-module .login-window .login-right .login-register-wrapper .login-input{position:relative;width:100%;padding:5px 0 5px 76px;color:#000000;border:0;margin:5px;background-color:transparent}
     .login-module .login-window .login-right .login-register-wrapper .submit-button{
         width:250px;
-        background-color:#bbbbbb;
-        color:rgb(255, 255, 255);
-        border: 1px solid #DF0101;
+        background-color:#f6b26b;
+        color:rgb(17, 17, 17);
+        border: 1px solid #f6b26b;
         border-radius: 10px;
         font-size:17px;
         -ms-flex-item-align:center;
@@ -41,11 +41,11 @@ body{
 }
 
 .login-module .login-window .login-right .login-register-wrapper .submit-button:hover{
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 1px solid rgba(17, 17, 17, 1);
     transition: border 2s ease;
     background-color: rgb(58, 58, 58);
     transition: background-color 1s ease;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(17, 17, 17, 1);
 }
 
 .login-module .login-window .login-right #response{
@@ -66,12 +66,12 @@ body{
 }
 
 .login-module .login-window .login-right #response.warning{
-    color:#ff0000;
+    color:#f6b26b;
     padding: 0px 97px 0px;
 }
 
 .login-module .login-window .login-right #response.error{
-    color:#d80019;
+    color:#f6b26b;
     padding: 0px 97px 0px;
 }
 
