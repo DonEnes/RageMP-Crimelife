@@ -155,7 +155,7 @@ namespace RageMP_Gangwar.Handler
                 if (player == null || !player.Exists || !player.hasAccountId()) return;
                 int pID = player.getAccountId();
                 if (pID <= 0 || player.getAdminLevel() < 4) return;
-                NAPI.ClientEvent.TriggerClientEventForAll("Client:HUD:SystemMessage", "Kriegsvertrag", $"Wer erklärt wem den Krieg: {attacker} vs {defender}. Grund des Krieges: Schädigung des Geschäfts, Respektlosigkeit gegenüber der {attacker} ,Beschuss der {attacker} Leaderschaft", 15000);
+                NAPI.ClientEvent.TriggerClientEventForAll("Client:HUD:SystemMessage", "Kriegsvertrag", $"Die Fraktion {attacker} erklärt {defender} den Krieg. Grund des Krieges: Schädigung des Geschäfts, Respektlosigkeit gegenüber der Fraktion {attacker} ,Beschuss der {attacker} Leaderschaft", 15000);
             }
             catch (Exception e)
             {
@@ -288,8 +288,8 @@ namespace RageMP_Gangwar.Handler
             }
         }
 
-        [Command("getusername")]
-        public void CMD_getusername(Client player, int accId)
+        [Command("getname")]
+        public void CMD_getname(Client player, int accId)
         {
             try
             {
