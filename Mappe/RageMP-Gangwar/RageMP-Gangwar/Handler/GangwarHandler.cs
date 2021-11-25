@@ -43,7 +43,7 @@ namespace RageMP_Gangwar.Handler
                 //int defenderCountOnline = Models.ServerFactions.GetFactionMemberCount(gwZone.currentOwner);
                 int attackerCountInArea = NAPI.Pools.GetAllPlayers().ToList().Where(x => x != null && x.Exists && x.hasAccountId() && Models.ServerAccounts.GetAccountSelectedTeam(x.getAccountId()) == Models.ServerAccounts.GetAccountSelectedTeam(player.getAccountId())).Count();
                 NAPI.Chat.SendChatMessageToAll($"Debug: {defenderCountOnline} | {attackerCountInArea} | {gwZone.currentOwner}");
-                if (attackerCountInArea < 3 || defenderCountOnline < 3)
+                if (attackerCountInArea < 1 || defenderCountOnline < 1)
                 {
                     player.SendChatMessage($"[~p~GANGWAR~w~] Dein Team oder das Gegnerteam besteht nicht aus 5 Personen (das Angreiferteam muss aus mindestens 5 Personen vor Ort bestehen).");
                     return;
