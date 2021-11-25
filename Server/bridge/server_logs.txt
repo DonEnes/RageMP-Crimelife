@@ -4819,3 +4819,46 @@ gangwar: loading remote events.. found 1 remote event(s)
 gangwar: loaded 11 remote event(s)
 -> Resource gangwar started!
 Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 25.11.2021 00:10:41
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting gangwar resource..
+gangwar: loading scripts.. found 1 script(s)
+gangwar: instantiating RageMP_Gangwar.Main..
+gangwar: instantiating RageMP_Gangwar.Utilities.Helper..
+gangwar: instantiating RageMP_Gangwar.Handler.AdminHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.ChatHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.Commands..
+gangwar: instantiating RageMP_Gangwar.Handler.DeathHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.DuellHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.FFAHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.GangwarHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.GarageHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.HotkeyHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.KeyHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.LoginHandler..
+gangwar: instantiating RageMP_Gangwar.Handler.TeamHandler..
+gangwar: loading server events.. found 3 server event(s)
+gangwar: loading server events.. found 1 server event(s)
+gangwar: loading server events.. found 1 server event(s)
+gangwar: loading server events.. found 1 server event(s)
+gangwar: loading server events.. found 1 server event(s)
+gangwar: loaded 7 server events(s)
+gangwar: loading commands.. found 25 command(s)
+gangwar: loading commands.. found 19 command(s)
+gangwar: loading commands.. found 3 command(s)
+gangwar: loading commands.. found 2 command(s)
+gangwar: loading commands.. found 1 command(s)
+gangwar: loaded 50 commands(s)
+gangwar: loading remote events.. found 1 remote event(s)
+gangwar: loading remote events.. found 1 remote event(s)
+gangwar: loading remote events.. found 1 remote event(s)
+gangwar: loading remote events.. found 1 remote event(s)
+gangwar: loading remote events.. found 3 remote event(s)
+gangwar: loading remote events.. found 1 remote event(s)
+gangwar: loading remote events.. found 2 remote event(s)
+gangwar: loading remote events.. found 1 remote event(s)
+gangwar: loaded 11 remote event(s)
+-> Resource gangwar started!
+Started! Waiting for connections..
