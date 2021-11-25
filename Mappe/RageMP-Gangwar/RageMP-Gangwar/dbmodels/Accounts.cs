@@ -51,3 +51,5 @@ namespace RageMP_Gangwar.dbmodels
         public bool isInEvent { get; set; } = false;
     }
 }
+
+//enes

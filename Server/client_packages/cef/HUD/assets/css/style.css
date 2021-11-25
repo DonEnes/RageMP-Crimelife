@@ -99,9 +99,6 @@ button.toast-close-button {
   margin: 0 0 6px;
   padding: 15px 15px 15px 60px;
   width: 300px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
-  border-radius: 3px 3px 3px 3px;
   background-position: 15px center;
   background-repeat: no-repeat;
   -moz-box-shadow: 0 0 12px #000000b7;
@@ -264,7 +261,9 @@ button.toast-close-button {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none; 
+  color: black;
+}
 
 input:disabled {
   cursor: default; }
@@ -293,7 +292,6 @@ html, body {
       padding: 0 25px;
       margin: 15px;
       font-size: 17px;
-      border-radius: 25px;
       color: #000000b7; }
       #gangwar-bar .gangwar-module {
         position: absolute;
@@ -335,7 +333,6 @@ html, body {
             #gangwar-bar .gangwar-module .gangwartimer-bar {
               position: absolute;
     width: 80%;
-    border-radius: 2px;
     margin-top: 66px;
     height: 7px;
     margin: 45px 0;
@@ -349,8 +346,7 @@ html, body {
     left: 1px;
     top: 1px;
     height: calc(100% - 2px);
-    background-color: #5fbdff;
-    border-radius: 2px; }
+    background-color: #5fbdff; }
                 #gangwar-bar .gangwar-module .gangwartimer-bar .progress.gained {
                   background-color: #e1e2ff;
                   will-change: width, background-color;
@@ -371,17 +367,18 @@ html, body {
     padding: 0 25px;
     margin: 15px;
     font-size: 17px;
-    border-radius: 3px;
     border: 2px solid rgb(0, 0, 0);
   }
   #top-bar .level-module {
     position: fixed;
     right: 850;
-    border-radius: 50px;
-    bottom: 5px; }
+    bottom: 5px;
+    background-color: rgba(255, 0, 0, 0.377);
+}
     #top-bar .level-module .kd-wrapper {
-      width: 100%;
-      padding: 0 0 5px 0; }
+      width: 20vw;
+      top: 1vw;
+      padding: 1vw 0vw 1vw 1vw; }
       #top-bar .level-module .kd-wrapper .kd-info {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -392,14 +389,15 @@ html, body {
         flex-direction: row;
         position: relative;
         text-align: right;
-        font-size: 22px;
-        margin: 0 30px;
+        font-size: 1.1vw;
+        margin: 0 1vw;
         font-weight: 500;
         -webkit-box-align: center;
         -ms-flex-align: center;
+        color: black;
         align-items: center; }
         #top-bar .level-module .kd-wrapper .kd-info.kills::before {
-          font-size: 16px;
+          font-size: 1vw;
           font-family: "Font Awesome 5 Free";
           content: "\f6de";
           font-weight: 600;
@@ -441,8 +439,10 @@ html, body {
         -ms-flex-line-pack: center;
         align-content: center;
         overflow: hidden; }
+
         #top-bar .level-module .lvl-xp .level-wrapper .level-text {
-          margin: 0 5px 0 0; }
+          margin: 0 5px 0 0; 
+        }
       #top-bar .level-module .lvl-xp #experience {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -460,10 +460,9 @@ html, body {
     #top-bar .level-module .experience-bar {
       position: relative;
       width: 100%;
-      border-radius: 2px;
       height: 7px;
       margin: 5px 0;
-      background-color: white; 
+      background-color: rgba(0, 0, 0, 0.603); 
     }
       #top-bar .level-module .experience-bar .progress {
         position: absolute;
@@ -474,7 +473,6 @@ html, body {
         top: 1px;
         height: calc(100% - 2px);
         background-color: rgba(255, 255, 255, 1);
-        border-radius: 1px; 
       }
 
         #top-bar .level-module .experience-bar .progress.gained {
